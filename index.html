@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+   
+    
+        <div id="navbar">
+        <sec id="navbar-left">
+            <img class="nav_logo" src="Images/log.png">
+        </sec>
+        <sec id="nav-right">
+           <!---<p class="icon" style="font-size: 2.5rem;">cast</p>
+            <p class="icon" style="font-size: 2.5rem;">search</p>-->
+            <img class="nav_avatar" src="Images/avatar.jpg" alt="no image found">
+        </sec>
+    </div>
+
+    <header id="banner">
+        <div id="banner_content">
+            <h1 id="banner_title"></h1>
+            <button id="banner_play" class="banner_button">Play</button>
+            <button id="banner_mylist" class="banner_button">My List</button>
+            <p id="banner_description"></p>
+        </div>
+        <div id="banner_fadeBottom"></div>  
+    </header>
+
+
+    <div id="head_row">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("#navbar");
+            nav.classList.toggle("active",window.scrollY > 300);
+        })
+    </script>
+
+</body>
+</html>

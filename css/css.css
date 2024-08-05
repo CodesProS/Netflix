@@ -1,0 +1,195 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+
+::--webkit-scrollbar{
+    width:7px;
+    background-color: #111;
+}
+
+::--webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius:10px;
+}
+
+#navbar{
+    padding: 10px 20px;
+    top:0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1;
+    position: fixed;
+    transition-timing-function: ease-in;
+    transition: all .5s;
+}
+
+#navbar.active{
+    background-color:black;
+}
+
+
+#nav-left{
+    margin-left:10px;
+}
+
+#nav-right{
+    display:flex;
+    position:fixed;
+    right:30px;
+    margin-right:10px;
+    align-items: center;
+}
+
+
+.nav_logo{
+    margin:10px;
+    width:234px;
+    height:100px;
+}
+
+.nav_avatar{
+    margin:10px;
+    width:70px;
+    height:70px;
+    margin-left: 20px;
+}
+
+.card
+{
+    border-radius: 40px;
+  padding: 20px 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: darkgray;
+  }
+
+  .icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;  /* Preferred icon size */
+    display: inline-flex ;
+    align-items: center;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: white;
+    margin-right: 0px;
+    margin-left: 20px;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+#banner{
+    color:white; 
+    background-size:cover;
+    background-position: center center;
+    height: 600px;
+    object-fit: contain;
+}
+
+#banner_content{
+    margin-left:70px;
+    padding-top:340px;
+    height:190px;
+}
+#banner_description{
+    font-size: .9rem;
+    width: 45rem;
+    line-height:1.5;
+    height:80px;
+    max-width: 360px;
+
+}
+
+#banner_title{
+    font-size: 3rem;
+    font-weight:800;
+    padding-bottom:.3rem;
+}
+
+.banner_button{
+    cursor:pointer;
+    outline: none;
+    font-weight: 700;
+    border-radius: .2rem;
+    margin: 1rem 0rem;
+    padding: 0.5rem 2rem;
+    color:white;
+    background-color: rgba(51,51,51,0.5);
+}
+
+.banner_button:hover{
+    color:black;
+    background-color: white;
+    transition:all .3s;
+}
+
+#banner_fadeBottom{
+    height: 7.4em;
+    position: relative;
+    top:143px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37,37,37,.61),
+        #111
+    );
+}
+
+
+
+.row{
+    color:white;
+    display: inline;
+    width:50px;
+    height:30px;
+}
+.row_posters{
+    display:flex;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    padding:15px;
+}
+
+.row_posters::-webkit-scrollbar{
+    display:none;
+}
+
+.row_title{
+    color:white;
+    font: bolder 30px 'Netflix Sans';
+}
+.row_posterL{
+    object-fit: contain;
+    width:100%;
+    max-height: 200px;
+    margin-right:10px;
+    transition: transform 500ms;
+}
+
+.row_posterL:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
